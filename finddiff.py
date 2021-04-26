@@ -67,16 +67,16 @@ def compare():
         csvWriter.writerows(diffRows)
 
 
+# for each master row , check if it exists in child rows, if exists , return false (not different), else return true (different)
 def check(mrow, crows, valuesIndexs):
-  # for each master row , check if it exists in child rows, if exists , return false (not different), else return true (different)
     if any(mrow == sublist for sublist in crows):
         return False
     else:
         return True
 
 
+# read content of a CSV file ,if file is master (file1):add its header values to headerValues[]
 def readcsv(path, ismaster, rows, headerValues=None):
-    # read content of a CSV file ,if file is master (file1):add its header values to headerValues[]
     with open(path, newline='') as csvf:
         csvreader = csv.reader(csvf)
         if ismaster:
