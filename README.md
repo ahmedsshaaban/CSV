@@ -8,6 +8,7 @@ finddiff is a simple python tool to compare two CSV files and output the diferre
 - find rows that exist in file1 and don't exist in file2
 - header_values : comma sperated values for the required Header fields or \all to use all header fields
 
+<hr>
 
 ### Example1:
 
