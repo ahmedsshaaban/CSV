@@ -1,5 +1,5 @@
 # finddiff:
-finddiff is a simple python tool to compare two CSV files and output the diferrent rows to a new CSV file. it can compare files based on all header fields or based on specific header field(s).
+finddiff is a simple python tool to compare two CSV files and output the diferrent rows to a new CSV file in the same directory. it can compare files based on all header fields or based on specific header field(s).
 
 ## Instructions
 <div class="highlight highlight-source-shell"><pre>.\finddiff.py file1 file2 "header_values"</pre></div>
